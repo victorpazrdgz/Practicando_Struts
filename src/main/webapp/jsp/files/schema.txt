@@ -1,0 +1,36 @@
+DROP TABLE IF EXISTS USUARIO;
+DROP TABLE IF EXISTS peliculas;
+DROP TABLE IF EXISTS valoraciones;
+DROP TABLE IF EXISTS pendientes;
+
+create table USUARIO (
+   nick VARCHAR(30) NOT NULL,
+   passwd VARCHAR(30) NOT NULL,
+   nombre VARCHAR(30) NOT NULL,
+   apellido VARCHAR(30) NOT NULL,
+   mail VARCHAR(30) NOT NULL,
+   tipo VARCHAR(30) NOT NULL,
+   PRIMARY KEY (nick),
+);
+CREATE TABLE peliculas (
+	id_peli INTEGER IDENTITY,
+	titulo VARCHAR(100) NOT NULL,
+	genero VARCHAR(50) NOT NULL,
+	director VARCHAR(80) NOT NULL,
+	actor1 VARCHAR(80) NULL,
+	actor2 VARCHAR(80) NULL,
+	anio VARCHAR(4) NOT NULL,
+	fotopeli VARCHAR(50) NULL,
+	valoracion FLOAT(4) NULL,
+	PRIMARY KEY (titulo),
+);
+CREATE TABLE valoraciones (
+	titulo VARCHAR(50) NOT NULL,
+	nick VARCHAR(30) NOT NULL,
+	valoracion FLOAT(4) NULL,
+);
+CREATE TABLE pendientes (
+	nick VARCHAR(30) NOT NULL,
+	titulo VARCHAR(50) NOT NULL,
+);
+	

@@ -1,0 +1,119 @@
+@charset "utf-8";
+@font-face {
+ 
+  font-family: "Rosewood Std Regular";
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+  src: url(ROSEWOODSTDREGULAR.OTF);
+ }
+#big_pic {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-row-span: 3;
+  padding: 15px;
+}
+
+#big_pic { 
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-row-span:1;
+  padding: 15px;
+  -ms-grid-row-align: center;
+  -ms-grid-column-align: center;
+}
+@media all and (orientation: portrait) {
+
+}
+
+#pelis {
+	font-size: 15px;
+	-ms-grid-column: 3;
+	color: rgb(228,208,175);
+	background-color: rgb(228,208,175);
+	position: inherit;
+	columns: 6;
+	
+	-column-count: 6;
+    -moz-column-count: 6;
+    -webkit-column-count: 6;
+    column-gap: 20px;
+    -moz-column-gap: 50px;
+    -webkit-column-gap: 50px;
+	
+}
+#pagedesc {
+  font-size: 12px;
+}
+#mainphoto {
+  width: 100%; 
+  border-width: 10px;
+  border-color: white;
+}
+.wrapper {
+    overflow:hidden;
+    width:320px;
+}
+ #busqueda table {
+	text-align: left;
+}
+* {
+				margin:0px;
+				padding:0px;
+			}
+			
+			#header {
+				margin:auto;
+				width:1200px;
+				font-family:Arial, Helvetica, sans-serif;
+				
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#990000;
+				color:#E4D0AF;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+
+.bienve {margin-left:240px;
+         position:absolute;
+         word-spacing:5px}
+
+body{ font-family: "Rosewood Std Regular";
+ background-color: rgb(228,208,175);
+ color: rgb(153,0,0);
+}	
+		

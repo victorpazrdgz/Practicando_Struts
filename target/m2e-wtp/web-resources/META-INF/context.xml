@@ -1,0 +1,13 @@
+<Context path="/twdb" docbase="twdb">
+  <Resource name="jdbc/twdb" 
+            auth="Container"
+            type="javax.sql.DataSource" 
+            driverClassName="org.hsqldb.jdbc.JDBCDriver"
+            url="jdbc:hsqldb:mem:twdb?autoReconnect=true"
+            username="sa" 
+            password="" 
+            maxActive="100" 
+            maxIdle="30"
+            maxWait="1000"
+    />
+   </Context> 
